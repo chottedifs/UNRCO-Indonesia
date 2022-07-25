@@ -108,7 +108,7 @@ header .img-logo {
 
 /* SECTION HERO  */
 .hero-image-1 {
-    background-image: url('../images/img-hero-1.svg');
+    background-image: url('../images/img-hero-1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -118,7 +118,7 @@ header .img-logo {
 }
 
 .hero-image-2 {
-    background-image: url('../images/img-hero-2.svg');
+    background-image: url('../images/img-hero-2.webp');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
