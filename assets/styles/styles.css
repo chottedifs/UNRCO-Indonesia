@@ -98,9 +98,6 @@ header .img-logo {
 }
 /* END Floating menu */
 
-body {
-    background-color: aqua;
-}
 
 /* SECTION HERO  */
 .hero-image-1 {
@@ -108,7 +105,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 585px;
+    height: 650px;
     margin: 0px;
     padding: 0px;
 }
@@ -137,7 +134,15 @@ body {
 /* END SECTION HERO  */
 
 /* HERO MENU */
-.hero .navbar-nav {
+.nav-hero {
+    margin-left: -10px;
+}
+
+nav li {
+    padding: 0px !important;
+}
+
+nav .navbar-nav {
     /* margin-top: 50px; */
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
@@ -145,243 +150,209 @@ body {
     font-size: 12px;
 }
 
-.hero .menu1 {
-    width: 200px;
-    color: #fff;
+.menus {
+    margin-left: -20px;
 }
 
-.hero .menu1:hover {
-    width: 200px;
-    color: #fff;
-}
-
-.hero .animated-box1{
+.menu1 {
+    /* margin-left: -31px; */
+    padding-left: 20px;
+    width: 100%;
     position: absolute;
-    margin: 0px;
-    padding-left: 10px;
-    bottom: 0;
-    height: 60px;
-    background: #0098d5;
+    color: #fff;
+    display: flex;
+    align-items: center;
     transition: 0.3s ease-in-out;
+    background-color: #0098d5;
     background-image: url('../images/nav-motif-1.svg');
-    background-position-x: 100px;
+    background-size: 40%;
     background-repeat: no-repeat;
+    background-position: right;
+    text-decoration: none;
+    height: 70px;
+    bottom: 0;
+    font-size: 14px;
 }
 
-.hero .animated-box1:hover{
+.menu1:hover {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    font-weight: 600;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .animated-box1.active{
+.menu1.active {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .menu2 {
-    width: 200px;
-    color: #fff;
-}
-
-.hero .menu2:hover {
-    width: 200px;
-    color: #fff;
-}
-
-.hero .animated-box2{
+.menu2 {
+    /* margin-left: -31px; */
+    padding-left: 20px;
+    width: 100%;
     position: absolute;
-    margin-left: 210px;
-    padding-left: 10px;
-    bottom: 0;
-    height: 60px;
-    background: #df243b;
+    color: #fff;
+    display: flex;
+    align-items: center;
     transition: 0.3s ease-in-out;
+    background-color: #df243b;
     background-image: url('../images/nav-motif-1.svg');
-    background-position-x: 100px;
+    background-size: 40%;
     background-repeat: no-repeat;
+    background-position: right;
+    text-decoration: none;
+    height: 70px;
+    bottom: 0;
+    font-size: 14px;
 }
 
-.hero .animated-box2:hover{
+.menu2:hover {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .animated-box2.active{
+.menu2.active {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .menu3 {
-    width: 200px;
-    color: #fff;
-}
-
-.hero .menu3:hover {
-    width: 200px;
-    color: #fff;
-}
-
-.hero .animated-box3{
+.menu3 {
+    /* margin-left: -31px; */
+    display: flex;
+    padding-left: 20px;
+    width: 100%;
     position: absolute;
-    margin-left: 420px;
-    padding-left: 10px;
-    bottom: 0;
-    height: 60px;
-    background: #f6bd0b;
+    color: #fff;
+    align-items: center;
     transition: 0.3s ease-in-out;
-    cursor: pointer;
+    background-color: #f6bd0b;
     background-image: url('../images/nav-motif-1.svg');
-    background-position-x: 100px;
+    background-size: 40%;
     background-repeat: no-repeat;
+    background-position: right;
+    text-decoration: none;
+    height: 70px;
+    bottom: 0;
+    font-size: 14px;
 }
 
-.hero .animated-box3:hover{
+.menu3:hover {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .animated-box3.active{
+.menu3.active {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .menu4 {
-    width: 250px;
-    color: #fff;
-}
-
-.hero .menu4:hover {
-    width: 250px;
-    color: #fff;
-}
-
-.hero .animated-box4{
+.menu4 {
+    /* margin-left: -31px; */
+    padding-left: 20px;
+    width: 100%;
     position: absolute;
-    margin-left: 630px;
-    padding-left: 10px;
-    bottom: 0;
-    height: 60px;
-    background: #f79724;
+    color: #fff;
+    display: flex;
+    align-items: center;
     transition: 0.3s ease-in-out;
-    cursor: pointer;
+    background-color: #f79724;
     background-image: url('../images/nav-motif-1.svg');
-    background-position-x: 150px;
+    background-size: 40%;
     background-repeat: no-repeat;
+    background-position: right;
+    text-decoration: none;
+    height: 70px;
+    bottom: 0;
+    font-size: 14px;
 }
 
-.hero .animated-box4:hover{
+.menu4:hover {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .animated-box4.action{
+.menu4.active {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .menu5 {
-    width: 250px;
-    color: #fff;
-}
-
-.hero .menu5:hover {
-    width: 250px;
-    color: #fff;
-}
-
-.hero .animated-box5{
+.menu5 {
+    /* margin-left: -31px; */
+    padding-left: 20px;
+    width: 100%;
     position: absolute;
-    margin-left: 890px;
-    padding-left: 10px;
-    bottom: 0;
-    height: 60px;
-    background: #56ba2b;
+    color: #fff;
+    display: flex;
+    align-items: center;
     transition: 0.3s ease-in-out;
-    cursor: pointer;
+    background-color: #56ba2b;
     background-image: url('../images/nav-motif-1.svg');
-    background-position-x: 150px;
+    background-size: 40%;
     background-repeat: no-repeat;
+    background-position: right;
+    text-decoration: none;
+    height: 70px;
+    bottom: 0;
+    font-size: 14px;
 }
 
-.hero .animated-box5:hover{
+.menu5:hover {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .animated-box5.active{
+.menu5.active {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 55%;
 }
 
-.hero .menu6 {
-    width: 189px;
-    color: #fff;
-    background-size: 65%;
-}
-
-.hero .menu6:hover {
-    width: 189px;
-    color: #fff;
-}
-
-.hero .animated-box6{
+.menu6 {
+    /* margin-left: -31px; */
+    /* margin-left: 3.4px; */
+    padding-left: 20px;
+    width: 94.5%;
     position: absolute;
-    margin-left: 1150px;
-    padding-left: 10px;
-    bottom: 0;
-    height: 60px;
-    background: #3f7e44;
+    color: #fff;
+    display: flex;
+    align-items: center;
     transition: 0.3s ease-in-out;
-    cursor: pointer;
+    background-color: #3f7e44;
     background-image: url('../images/nav-motif-1.svg');
-    background-position-x: 100px;
+    background-size: 40%;
     background-repeat: no-repeat;
+    background-position: right;
+    text-decoration: none;
+    height: 70px;
+    bottom: 0;
+    font-size: 14px;
 }
 
-.hero .animated-box6:hover{
+.menu6:hover {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
+    background-size: 60%;
 }
 
-.hero .animated-box6.active{
+.menu6.active {
     height: 90px;
-    border-radius: 10px 10px 0px 0px;
     color: #fff;
-    background-size: 65%;
-}
-
-.hero {
-    margin-bottom: 80px;
+    background-size: 55%;
 }
 /* END HERO MENU */
 
 
 /* SECTION CONTENT  */
 .content {
-    margin-top: -90px;
+    /* margin-top: -90px; */
+    margin-left: 60px;
     padding-top: 50px;
     background-image: url('../images/motif-bg.svg')!important;
     background-repeat: repeat-y;
@@ -404,6 +375,7 @@ body {
 .content .title-content {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    font-size: 40px;
     font-weight: bold;
     color: #19486a;
 }
@@ -412,6 +384,7 @@ body {
     margin-bottom: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    font-size: 40px;
     font-weight: bold;
     color: #19486a;
 }
