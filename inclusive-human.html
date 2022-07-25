@@ -303,13 +303,15 @@
 
 
 
-
-
-
     <script type="text/javascript">
         function actionToggle() {
             var action = document.querySelector('.action');
             action.classList.toggle('active')
+        }
+
+        var action = document.querySelector('.action');
+        window.onscroll = function(){
+            action.classList.toggle('show', window.scrollY >= 600);
         }
     </script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

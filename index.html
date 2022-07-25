@@ -39,12 +39,12 @@
     <section class="menus">
         <div class="row p-0 m-0">
             <div class="col-lg-2" style="position: relative;">
-                <a href="index.html" class="menu1">
+                <a href="index.html" class="menu1 active">
                     Review a Year
                 </a>
             </div>
             <div class="col-lg-2" style="position: relative;">
-                <a href="inclusive-human.html" class="menu2 active">
+                <a href="inclusive-human.html" class="menu2">
                     Inclusive Human Development
                 </a>
             </div>
@@ -188,6 +188,11 @@
         function actionToggle() {
             var action = document.querySelector('.action');
             action.classList.toggle('active')
+        }
+
+        var action = document.querySelector('.action');
+        window.onscroll = function(){
+            action.classList.toggle('show', window.scrollY >= 600);
         }
     </script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
