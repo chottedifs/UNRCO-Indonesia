@@ -179,6 +179,7 @@ nav .navbar-nav {
     height: 70px;
     bottom: 0;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu1:hover {
@@ -211,6 +212,7 @@ nav .navbar-nav {
     height: 70px;
     bottom: 0;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu2:hover {
@@ -243,6 +245,7 @@ nav .navbar-nav {
     height: 70px;
     bottom: 0;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu3:hover {
@@ -275,6 +278,7 @@ nav .navbar-nav {
     height: 70px;
     bottom: 0;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu4:hover {
@@ -307,6 +311,7 @@ nav .navbar-nav {
     height: 70px;
     bottom: 0;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu5:hover {
@@ -340,6 +345,7 @@ nav .navbar-nav {
     height: 70px;
     bottom: 0;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu6:hover {
@@ -434,14 +440,14 @@ nav .navbar-nav {
 .content .img-content-1 {
     width: 100%;
     display: flex;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     /* height: 3300px; */
 }
 
 .content .img-content-2 {
     width: 100%;
     display: flex;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     /* height: 3300px; */
 }
 
@@ -542,7 +548,7 @@ nav .navbar-nav {
         display: flex;
         justify-content: center;
         width: 100%;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         margin-bottom: 20px;
     }
 
@@ -551,7 +557,7 @@ nav .navbar-nav {
         display: flex;
         justify-content: center;
         width: 100%;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         margin-bottom: 20px;
     }
 
