@@ -12,6 +12,13 @@ body {
     background-repeat: repeat-y;
 }
 
+.modal-content {
+    background-image: url("../images/motif-bg.svg");
+    background-position: right;
+    background-repeat: repeat-y;
+
+}
+
 
 /* Component Color */
 .bg-color-bluedark {
@@ -310,7 +317,6 @@ section.story-ihd .card-body {
     background-size: contain;
 }
 /* End inclusive Human */
-
 
 
 
