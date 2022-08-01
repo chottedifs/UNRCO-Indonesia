@@ -2,9 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+body {
+    margin-left: 60px;
+}
+
+
 /* Component Color */
 .bg-color-bluedark {
     background-color: #19486a;
+}
+
+.bg-color-bluelight {
+    background-color: #1794D1;
 }
 
 .bg-color-red {
@@ -134,10 +143,12 @@
 /* End Conponent Font */
 
 /* Component Menus */
+
+
 .menus {
     position: absolute;
     height: 60px;
-    width: 112%;
+    width: 100%;
     left: -12px;
     right: -12px;
     bottom: 0;
@@ -153,6 +164,7 @@
     font-weight: 400;
     transition: all 0.3s ease-in-out;
     justify-items: center;
+    margin: auto;
 }
 
 .menus:hover {
@@ -477,7 +489,55 @@ section.story-ihd .card-body {
 }
 /* End Carousel Card */
 
+/* Carousel Card Infografis */
+.carousel-card-infografis .owl-nav{
+    position: absolute;
+    z-index:1;
+    width:100%;
+    font-size:30px;
+    top:40%;
+}
 
+.carousel-card-infografis .owl-nav button.owl-next, .carousel-card-infografis .owl-nav button.owl-prev {
+    box-shadow:0 8px 8px rgb(0 0 0 / 30%);
+    background-color:#000;
+    line-height:0;
+    border-radius:100%;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-card-infografis .owl-nav button.owl-next{ 
+    top: -18px;
+    right: -10px;
+    height: 40px;
+    width: 40px;
+}
+
+.carousel-card-infografis .owl-nav button.owl-next:hover{ 
+    /* background-color: #19486a; */
+    color: #fff;
+    transform: scale(0.9);
+}
+
+.carousel-card-infografis .owl-nav button.owl-prev {
+    top: -18px;
+    left: -35px;
+    height: 40px;
+    width: 40px;
+}
+
+.carousel-card-infografis .owl-nav button.owl-prev:hover {
+    /* background-color: #19486a; */
+    color: #fff;
+    transform: scale(0.9);
+}
+/* End Carousel Card */
+
+
+@media screen and (max-width:980px){.carousel-card-infografis .owl-stage-outer{transform:scale(1.5)}}
+@media screen and (max-width:768px){.carousel-card-infografis .owl-stage-outer{transform:scale(1);padding:10px 0}.owl-nav{display:none}}
 @media screen and (max-width:980px){.carousel-card .owl-stage-outer{transform:scale(1.5)}}
 @media screen and (max-width:768px){.carousel-card .owl-stage-outer{transform:scale(1);padding:10px 0}.owl-nav{display:none}}
 @media screen and (max-width:980px){.carousel-infografis .owl-stage-outer{transform:scale(1.5)}}
