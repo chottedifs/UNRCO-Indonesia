@@ -46,7 +46,7 @@
                     </div>
                     <div class="col-md-12 col-lg-2"  style="position: relative;">
                         <div>
-                            <a href="review-year.html" class="menus bg-color-yellow">Economic Transformation</a>
+                            <a href="economic-transformation.html" class="menus bg-color-yellow">Economic Transformation</a>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-2"  style="position: relative;">
@@ -75,24 +75,21 @@
                 </div>
                 <div class="row mb-4">
                     <p class="text-content">
-                        <img src="assets/images/img-content-1.webp" class="img-fluid me-4" style="float: left; width: 28%;" alt="img-conten-1">
+                        <img src="assets/images/img-content-1.webp" class="img-fluid me-4" style="float: left; width: 40%;" alt="img-conten-1">
                         In 2021, as the UN and the Government of Indonesia contended with the fallout of the pandemic’s first year, Indonesia faced a resurgent health crisis driven by COVID-19’s virulent Delta Variant. <br><br>
                         At its July peak, the archipelago recorded more than 350,000 new cases one week and more than 12,400 deaths the next. Meanwhile, the pandemic’s socio-economic impacts continued to land hardest on those already at risk of being left behind, including migrant workers, refugees, people living with HIV, and people with disabilities. The pandemic also struck a blow to progress on gender equality with sectors such as retail, hospitality, and garment manufacturing that employ many women sustaining massive job losses, and the informal sector hit harder still. <br><br>
-                        Young people have been similarly disadvantaged. Between 2020 and 2021, the proportion of youth not in employment, education, and training doubled from 8% to 16.4%.  Meanwhile, the proportion of youth working in the informal sector rose by 6% overall between February 2020 and February 2021, with the proportion of young graduates informally employed rising 13.1% in that time.
-                    </p>
-                </div>
-                <div class="row mb-4">
-                    <p class="text-content">
-                        <img src="assets/images/img-content-2.webp" class="img-fluid ms-4" style="float: right; width: 30%;" alt="img-conten-2">
+                        Young people have been similarly disadvantaged. Between 2020 and 2021, the proportion of youth not in employment, education, and training doubled from 8% to 16.4%.  Meanwhile, the proportion of youth working in the informal sector rose by 6% overall between February 2020 and February 2021, with the proportion of young graduates informally employed rising 13.1% in that time. <br><br>
+                        <img src="assets/images/img-content-2.webp" class="img-fluid ms-4" style="float: right; width: 40%;" alt="img-conten-2">
                         Despite the escalating challenges, however, the Government of Indonesia and the UN’s extraordinary COVID-19 response and recovery efforts began to bear fruit in 2021. <br><br>
                         The UN and the Government of Indonesia orchestrated one of the world’s most complex vaccination campaigns across thousands of inhabited islands that span three time zones. By January 19, 2022, Indonesia had administered more than 300 million COVID-19 vaccination doses, including some of the 87 million doses whose arrival the UN facilitated through the COVAX facility.  <br><br>
                         Meanwhile, Gross Domestic Product (GDP) growth bounced back to 3.69%, approaching the government’s growth target   of   3.7%–4.5%, while GDP   per   capita reached $4,349.5. <br> <br>
                         The Government’s 2021 Voluntary National Review showed that some SDG indicators that had been making headway from 2015 to 2019 had veered off course, including the proportion of the population living below the national poverty line, the prevalence of undernourishment, and the economic growth   and   unemployment   rate. But other   indicators progressed despite the pandemic. <br><br>
-
                     </p>
                 </div>
-                <div class="row mb-4 justify-content-center">
-                    <img src="assets/images/infografis.webp" style="width: 50%;" class="shadow-sm" alt="infografis-review" data-aos="fade-down">
+                <div class="row justify-content-center mb-4">
+                    <div class="card w-50 p-3 shadow-sm border-0">
+                        <div id="chart-review" style="width:100%; height:400px;"></div>
+                    </div>
                 </div>
                 <div class="row mb-4">
                     <p class="text-content">
@@ -191,6 +188,7 @@
     <script src="assets/library/OwlCarousel2-2.3.4/js/owl.carousel.js"></script>
     <script src="assets/library/aos-master/dist/aos.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <script>
         AOS.init();
       </script>
@@ -204,6 +202,82 @@
         window.onscroll = function(){
             action.classList.toggle('show', window.scrollY >= 600);
         }
+    </script>
+    <script>
+        Highcharts.chart('chart-review', {
+
+        title: {
+            text: 'Indonesia Economic Growth'
+        },
+
+        subtitle: {
+                text: 'Source: BPS (Constant Price)'
+        },
+
+        xAxis: {
+        accessibility: {
+            rangeDescription: 'Range: 2010 to 2017'
+        }
+        },
+
+        plotOptions: {
+            series: {
+                    label: {
+                    connectorAllowed: false
+                    },
+                    pointStart: 2015
+            },
+            line : {
+                    dataLabels : {
+                        enabled : true,
+                        // formatter : function() {
+                        //     return this.y + '%';
+                        // }
+                    }
+            }
+        },
+
+        series: [{
+            name: 'Per Capita Income Growth (%)',
+            data: [7.64, 6.21, 8.35, 7.90, 5.89, -3.37, 9.28],
+            marker: {
+                symbol: 'url(assets/images/motif-red.svg)'
+            },
+            color: '#ED4328'
+        }, 
+        {
+                name: 'GDP Growth (%)',
+                data: [4.88, 5.03, 5.07, 5.17, 5.02,-2.07, 3.69],
+                marker: {
+                    symbol: 'url(assets/images/motif-blue.svg)'
+                },
+                color: '#278DE1'
+            },
+        ],
+
+        // legend: {
+        //     title: {
+        //         text: 'Source: BPS'
+        //     }
+        // },
+
+        responsive: {
+        rules: [{
+            condition: {
+            maxWidth: 500
+            }
+        }]
+        },
+
+        yAxis: {
+            visible: false,
+        },
+
+        credits: {
+            enabled: false
+        },
+
+        });
     </script>
 </body>
 </html>

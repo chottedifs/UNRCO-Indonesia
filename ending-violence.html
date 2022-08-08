@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNCRO Indonesia</title>
+    <title>UNRCO Indonesia</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="shortcut icon" href="assets/images/logo-uncro.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/library/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/library/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/library/aos-master/dist/aos.css">
 </head>
 <body>
@@ -23,8 +25,8 @@
     </header>
 
     <main>
-         <!-- Floating menu -->
-         <div class="action shadow-sm" onclick="actionToggle();">
+        <!-- Floating menu -->
+        <div class="action shadow-sm" onclick="actionToggle();">
             <span class="toggle-menu"><i class="bi bi-list"></i></span>
             <span class="text-menu">Menu</span>
             <ul class="navbar-nav shadow-sm">
@@ -49,9 +51,9 @@
             </ul>
         </div>
         <!-- End Floating menu -->
-
+        
         <section class="hero">
-            <div class="jumbotron p-4 mb-4">
+            <div class="jumbotron1 p-4 mb-4">
                 <div class="container py-5">
                   <p class="text-jumbotron">
                     United Nations In Indonesia <br>
@@ -68,12 +70,12 @@
                     </div>
                     <div class="col-md-12 col-lg-2" style="position: relative;">
                         <div>
-                            <a href="inclusive-human.html" class="menus bg-color-red">Inclusive Human Development</a>
+                            <a href="inclusive-human.html" class="menus bg-color-red active">Inclusive Human Development</a>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-2"  style="position: relative;">
                         <div>
-                            <a href="economic-transformation.html" class="menus bg-color-yellow">Economic Transformation</a>
+                            <a href="review-year.html" class="menus bg-color-yellow">Economic Transformation</a>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-2"  style="position: relative;">
@@ -95,105 +97,39 @@
             </div>
         </section>
         
-        <section class="about">
+        <section class="carousel-ihd">
             <div class="container">
-                <div class="row">
-                    <h3 class="text-title">About Us</h3>
+                <div class="row mt-5">
+                    <h3 class="text-title">Ending Violence against Women, <br> Children and Other Harmful Practices</h3>
                 </div>
-                <div class="row mb-4">
-                    <div class="col-sm-12 col-md-12 col-lg-5">
-                        <img src="assets/images/img-content-7.webp" width="100%" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-7">
-                        <p class="text-content">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti, fugiat molestiae deserunt et provident 
-                            nobis. Perspiciatis provident suscipit cumque voluptatem rem est in eum odit quae sequi molestiae maxime, numquam 
-                            vitae perferendis sapiente. Ipsam odit debitis architecto voluptatum molestias pariatur dolorem autem dolore 
-                            placeat. Animi totam deleniti nisi et aliquid, nihil voluptatem quidem, sequi veritatis omnis assumenda esse 
-                            nostrum minima, aliquam quas excepturi magnam odit non quos facere quod molestiae facilis. Nobis autem in quos 
-                            deserunt officiis cumque cupiditate error, magnam nemo. Exercitationem reprehenderit quasi inventore quo? Asperiores
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti, fugiat molestiae deserunt et provident 
-                            nobis. Perspiciatis provident suscipit cumque voluptatem rem est in eum odit quae sequi molestiae maxime, numquam 
-                            vitae perferendis sapiente. Ipsam odit debitis architecto voluptatum molestias pariatur dolorem autem dolore 
-                            placeat. Animi totam deleniti nisi et aliquid, nihil voluptatem quidem, sequi veritatis omnis assumenda esse 
-                            nostrum minima, aliquam quas excepturi magnam odit non quos facere quod molestiae facilis. Nobis autem in quos 
-                            deserunt officiis cumque cupiditate error, magnam nemo. Exercitationem reprehenderit quasi inventore quo? Asperiores
-                            vitae perferendis sapiente. Ipsam odit debitis architecto voluptatum molestias pariatur dolorem autem dolore 
-                            placeat. Animi totam deleniti nisi et aliquid, nihil voluptatem quidem, sequi veritatis omnis assumenda esse 
-                            nostrum minima, aliquam quas excepturi magnam odit non quos facere quod molestiae facilis. Nobis autem in quos 
-                            deserunt officiis cumque cupiditate error, magnam nemo. Exercitationem reprehenderit quasi inventore quo? Asperiores
-                        </p>
+            </div>
+        </section>
+
+        <section class="carousel-ihd">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="owl-carousel carousel-card-infografis">
+                        <div class="item">
+                            <img class="card-img" src="assets/images/ending-violence/violence-infografis-1.svg" alt="Card image">
+                        </div>                        
+                        <div class="item">
+                            <img class="card-img" src="assets/images/ending-violence/violence-infografis-2.svg" alt="Card image">
+                        </div>                        
+                        <div class="item">
+                            <img class="card-img" src="assets/images/ending-violence/violence-infografis-3.svg" alt="Card image">
+                        </div>                        
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="foreword">
+        <section class="content-ihd">
             <div class="container">
                 <div class="row">
-                    <h3 class="text-title">Foreword</h3>
-                </div>
-                <div class="row mb-4">
-                    <div class="col-lg-6">
-                        <div class="card mb-3" data-aos="fade-right">
-                            <div class="row g-0">
-                              <div class="col-md-6">
-                                <img src="assets/images/vallerie.webp" class="img-foreword" alt="...">
-                              </div>
-                              <div class="col-md-6">
-                                <div class="d-flex align-items-start flex-column card-body">
-                                  <h5 class="text-name p-2">Valerie Julliand</h5>
-                                  <p class="text-occupation p-2">United Nations Resident Coordinator in Indonesia</p>
-                                  <a href="" class="read-more mb-auto p-2"><img src="assets/images/motif-read.svg" alt="motif-read" class="me-2" width="20">Read more</a>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card mb-3" data-aos="fade-left">
-                            <div class="row g-0">
-                              <div class="col-md-6">
-                                <img src="assets/images/suharso.webp" class="img-foreword" alt="...">
-                              </div>
-                              <div class="col-md-6">
-                                <div class="d-flex align-items-start flex-column card-body">
-                                  <h5 class="text-name p-2">Suharso Monoarfa</h5>
-                                  <p class="text-occupation p-2">Minister of National Development Planning/Head of National Development Planning Agency (Bappenas)</p>
-                                  <a href="" class="read-more mb-auto p-2"><img src="assets/images/motif-read.svg" alt="motif-read" class="me-2" width="20">Read more</a>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="ulap-doyo">
-            <div class="container">
-                <div class="row">
-                    <h3 class="text-title">The Ulap Doyo Pattern</h3>
-                </div>
-                <div class="row mb-4">
                     <p class="text-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quo quam sapiente itaque molestias iusto modi?
-                        Nesciunt porro dicta aliquam fugiat illo, eum exercitationem nemo. Doloremque culpa consequatur saepe aperiam
-                        nihil, ipsam nostrum officia ratione similique pariatur inventore sapiente voluptatem voluptatibus harum nemo
-                        vero rem maxime dolore? Inventore, soluta, earum a maxime enim provident temporibus molestias alias adipisci,
-                        unde repudiandae beatae? Culpa aspernatur, molestiae sequi incidunt neque numquam obcaecati, magni quis illo
-                        accusamus voluptatibus! Nemo assumenda vel adipisci ad, inventore sit quas amet, aut ex corporis a sequi? 
-                        Reiciendis praesentium et voluptatum a placeat dignissimos atque sed dolorem possimus quasi, porro voluptate, 
-                        harum, debitis impedit ut! Voluptates quo, voluptas consequatur velit optio odit commodi? Obcaecati esse odit
-                        vero facere, facilis odio repellendus. Accusamus perspiciatis perferendis ipsa ducimus, praesentium quam iste
-                        error ut, aperiam neque doloremque quo beatae aspernatur aliquid nesciunt tempore reprehenderit atque ipsam, 
-                        id nostrum natus quos esse expedita. Tempore enim modi in, magnam sapiente perspiciatis aperiam, rem 
-                        quibusdam magni quidem consequuntur asperiores laborum laudantium mollitia non quae aliquam culpa praesentium
-                        adipisci repellat itaque. Quasi, error? Dolore, libero beatae, itaque ex consectetur id blanditiis ipsum
-                        neque similique voluptatum culpa laudantium molestias magni incidunt perferendis minima quae sequi 
-                        assumenda rerum voluptas? Ducimus non harum molestiae asperiores aperiam alias aut eaque ipsa accusamus 
-                        optio autem atque, tenetur distinctio
-                    </p>
+                        <img src="assets/images/ending-violence/violence-image.jpg" alt="" class="img-fluid me-4" style="float: left;" width="50%">
+                        Globally, women and children experienced higher rates of violence during the COVID-19 pandemic’s first months, a November 2021 report by the World Health Organization found. The UN is working on multiple fronts to support the government’s efforts to protect human rights, including through eliminating gender-based violence, and ending harmful practices. <br><br>
+                    </p>  
                 </div>
             </div>
         </section>
@@ -224,8 +160,8 @@
                                     <li class="nav-item mb-3">
                                         <a href="#" class="p-0 text-nav-footer">
                                             <i class="bi bi-geo-alt-fill pe-3"></i>
-                                            Perserikatan Bangsa-Bangsa | Menara
-                                            Thamrin Lt.7, <br> <span style="padding-left: 35px;">Jl. MH.Thamrin Kav.3, Jakarta - Pusat,10250</span>
+                                            Perserikatan Bangsa-Bangsa | Menara Thamrin Lt.7, <br> 
+                                            <span style="padding-left: 35px;">Jl. MH.Thamrin Kav.3, Jakarta - Pusat,10250</span>
                                         </a>
                                     </li>
                                     <li class="nav-item mb-3">
@@ -249,9 +185,10 @@
                         </div>
                     </div>
                 </footer>
-            </div>
+              </div>
         </section>
     </main>
+    
     
     <script src="assets/library/jQuery/jquery-3.6.0.min.js"></script>
     <script src="assets/library/OwlCarousel2-2.3.4/js/owl.carousel.js"></script>
@@ -259,7 +196,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script>
         AOS.init();
-    </script>
+      </script>
     <script type="text/javascript">
         function actionToggle() {
             var action = document.querySelector('.action');
@@ -270,6 +207,33 @@
         window.onscroll = function(){
             action.classList.toggle('show', window.scrollY >= 600);
         }
+    </script>
+    <script>
+        $('.carousel-card-infografis').owlCarousel({
+                loop: true,
+                center: true,
+                items: 3,
+                margin: 15,
+                // autoplay: true,
+                // dots:true,
+                nav:true,
+                navText: [
+                    "<img alt='Slider' src='assets/images/prev-btn.svg'/>",
+                    "<img alt='Slider' src='assets/images/next-btn.svg'/>"],
+                autoplayTimeout: 8500,
+                smartSpeed: 450,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1170: {
+                        items: 3
+                    }
+                }
+            });
     </script>
 </body>
 </html>

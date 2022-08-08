@@ -64,6 +64,7 @@ body {
     color: #19486a;
     margin-bottom: 40px;
     background-image: url('../images/motif-title.svg');
+    background-size: 150px;
     background-repeat: no-repeat;
     background-position: right;
 }
