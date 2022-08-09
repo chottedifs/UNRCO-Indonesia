@@ -248,6 +248,13 @@ section .jumbotron1 {
     background-size: cover;
 }
 
+section .jumbotron2 {
+    height: 550px;
+    background-image: url('../images/economic-transformation/foto/img-hero-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 section .text-jumbotron {
     padding-top: 250px;
     color: #fff;
