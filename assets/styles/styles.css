@@ -114,12 +114,14 @@ body {
 }
 
 .text-card-story {
+    padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
     color: #19486a;
     font-size: 18px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .text-modal-story {
@@ -137,11 +139,11 @@ body {
     line-height: 0px;
 }
 
-.text-card-story:hover {
+/* .text-card-story:hover {
     color: #19486a;
     font-weight: 700;
     transform: scale(1.1);
-}
+} */
 
 .read-more:hover {
     color: #fff;
