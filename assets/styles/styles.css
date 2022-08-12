@@ -259,7 +259,14 @@ section .jumbotron2 {
 
 section .jumbotron4 {
     height: 550px;
-    background-image: url('../images/innovation-to-accelerate/foto/img-hero-4.jpg');
+    background-image: url('../images/green-development/foto/img-hero-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section .jumbotron5 {
+    height: 550px;
+    background-image: url('../images/innovation-to-accelerate/foto/img-hero-5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
