@@ -100,7 +100,7 @@
         <section class="carousel-ihd">
             <div class="container">
                 <div class="row mt-5">
-                    <h3 class="text-title">Mutual Support Through the Pandemic</h3>
+                    <h3 class="text-title">Funding Frameworks and <br> Resources Mobilization</h3>
                 </div>
             </div>
         </section>
@@ -109,21 +109,19 @@
             <div class="container">
                 <div class="row mb-5">
                     <p class="text-content">
-                        In the second year of the COVID-19 pandemic, the UN in Indonesia pooled resources and expertise to prepare for a scenario in which Indonesia’s health services would be stretched beyond their normal capacity to effectively support the UNCT. <br><br> 
-                        To ensure the continuation of services and protect UN personnel under such a scenario, the UN established a COVID-19 coordination cell with a designated coordinator and representatives from across UN agencies. The coordination cell kept track of the COVID-19 caseload among UN personnel and their dependents, monitored infected individuals’ health situations, and assisted in finding hospital beds for those UN staff members and their eligible dependents who required them at the height of the crisis. The coordination cell also purchased oxygen concentrators based on contingency planning assessments and set up a storage and distribution plan to ensure oxygen could reach those in need. Further, the cell explored agreements with hospitals to make access to essential services for COVID-19 more available. <br><br>
-                        Throughout the crisis, the UN in Indonesia organised regular town halls with all UN personnel to brief them on the latest COVID-19 developments in the country and address any questions and concerns which staff raised. Several other UN initiatives helped ensure the safety and security of all UN personnel during the COVID-19 crisis: <br><br>
-                        <ul class="text-content">
-                            <li class="list-motif">
-                                <b>Updating Standard Operating Procedures (SOPs) on returning to offices:</b> for most of 2021, the UNCT maintained the work-from-home approach it first adopted in March 2020. However, in September 2021, the UN in Indonesia  developed protocols for the safe and gradual return of UN personnel to UN premises as office-based work became  more feasible. The SOPs were updated and circulated to ensure UN-wide
-                            </li>
-                            <li class="list-motif">
-                                <b>Vaccination programme for UN personnel and their dependents in Indonesia:</b> the UN in Indonesia organised a vaccination programme for UN personnel and their dependents, which engaged private medical providers. Conducted between June and October 2021, the arrangement afforded each UN entity the flexibility to determine the scope of coverage for vaccinations and ensure that as many staff members and dependents as possible received vaccinations. 
-
-                            </li>
-                            <li class="list-motif">
-                                <b>COVID-19 surge personnel:</b> the UN in Indonesia recruited a medical clerk and a stress counselor to support the coordinated provision of medical and psychological services for UN personnel and their dependents during the COVID-19 pandemic. The stress counselor’s appointment responded to the COVID-19 pandemic’s potential to exacerbate staff stress levels and pose an array of other mental health challenges.
-                            </li>
-                        </ul>
+                        During the formulation of the UNSDCF 2021–2025, the UN in Indonesia prepared a multi-year funding framework to estimate the total resources that would be required for the full five-year implementation of the UNSDCF, as well as the total resources available. <br><br>
+                    </p>  
+                </div>
+                <div class="row justify-content-center mb-4">
+                    <div class="card w-75 p-3 shadow-sm border-0 highcharts-figure">
+                        <div id="chart-funding" style="width:100%; height:400px;"></div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <p class="text-content">
+                        In 2021, the UN in Indonesia’s total required budget— comprised of grants and loans—was US$ 321.86 million. Of this, the UN obtained US$ 269.97 million in grants and loans to fund the implementation of the UNSDCF in 2021, which entailed a total funding gap of US$ 51.89 million, or 16.12%. <br><br>
+                        <img src="../assets/images/un-reform/funding/funding-infografis-1.svg" alt="funding-infografis-1" width="100%" class="shadow-sm" data-aos="fade-in" style="margin-left: auto; margin-right: auto;"> <br><br>
+                        Excluding loans, the UN’s total required budget was US$ 215.76 million. Excluding loans, the UN obtained US$ 181.56 million, which entailed a funding gap of US$ 34.20 million, or 15.85%. <br><br> 
                     </p>  
                 </div>
             </div>
@@ -189,6 +187,12 @@
     <script src="../assets/library/OwlCarousel2-2.3.4/js/owl.carousel.js"></script>
     <script src="../assets/library/aos-master/dist/aos.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
     <script>
         AOS.init();
       </script>
@@ -203,5 +207,62 @@
             action.classList.toggle('show', window.scrollY >= 600);
         }
     </script>
+
+    <script>
+        Highcharts.chart('chart-funding', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Multi Year Funding Framework - UNSDCF 2021-2025'
+        },
+        // subtitle: {
+        //     text: 'Source: WorldClimate.com'
+        // },
+        // xAxis: {
+        //     categories: [
+        //     'Jan',
+        //     ],
+        //     // crosshair: true
+        // },
+        // yAxis: {
+        //     min: 0,
+        //     title: {
+        //     text: 'Rainfall (mm)'
+        //     }
+        // },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            // shared: true,
+            // useHTML: true
+        },
+        series: [{
+            name: 'Estimated Total Resources Required (USD)',
+            data: [990.2]
+
+        }, {
+            name: 'Estimated Available Resources (USD)',
+            data: [83.6]
+
+        }],
+
+        yAxis: {
+            visible: false,
+        },
+        
+        xAxis: {
+            visible: false,
+            // tickWidth: 1
+        },
+
+        credits: {
+            enabled: false
+        },
+        });
+    </script>
+    
 </body>
 </html>
