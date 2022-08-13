@@ -139,6 +139,14 @@ body {
     line-height: 0px;
 }
 
+.list-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #19486a;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
 /* .text-card-story:hover {
     color: #19486a;
     font-weight: 700;
@@ -342,7 +350,47 @@ section.story-ihd .card-body {
 }
 /* End inclusive Human */
 
+/* UN Reform */
+.menus-reform{
+    color: #19486a;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px darkgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url('../images/nav-motif-2.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: 'Montserrat', sans-serif;
+    background-size: 40%;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
 
+.menus-reform:hover{
+    color: #fff;
+    background-color: #1794D1;
+    background-image: url('../images/nav-motif-3.svg');
+    transform: scale(1.05);
+}
+
+.story-card-box {
+    background-color: #1794D1;
+    color: #19486a;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.story-card-box .card {
+    background-image: url('../images/motif-btn-menu-1.svg');
+    background-size: 100%;
+    background-repeat: no-repeat ;
+    background-position: right;
+
+}
+/* End UN Reform */
 
 
 
