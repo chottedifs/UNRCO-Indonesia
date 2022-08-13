@@ -12,11 +12,28 @@ body {
     background-repeat: repeat-y;
 }
 
-.modal-content {
+.bg-box-story {
     background-image: url("../images/motif-bg.svg");
     background-position: right;
-    background-repeat: repeat-y;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
+.bg-box-story-human {
+    background-image: url("../images/motif-bg.svg");
+    /* background-position: right; */
+    /* background-position-y: 80px; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bg-box-scorecard {
+    background-image: url("../images/motif-bg.svg");
+    background-position: right;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-size: 50%;
 }
 
 
@@ -83,9 +100,23 @@ body {
     color: #fff;
 }
 
+.text-name-box {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
 .text-occupation {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.text-occupation-box {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
     font-weight: 400;
     color: #fff;
 }
@@ -163,6 +194,12 @@ body {
 .text-nav-footer:hover {
     color: #fff;
     font-size: 15px;
+}
+
+.text-footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
 }
 /* End Conponent Font */
 
@@ -279,6 +316,13 @@ section .jumbotron5 {
     background-size: cover;
 }
 
+section .jumbotron6 {
+    height: 550px;
+    background-image: url('../images/un-reform/img-hero-6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 section .text-jumbotron {
     padding-top: 250px;
     color: #fff;
@@ -315,20 +359,44 @@ section.carousel-ihd .card {
 
 /* Foreword */
 section.foreword .card {
-    border: none;
+    border: 1;
+    max-height: 100%;
 }
 
-section.foreword .img-foreword {
+section.foreword .img-card-ihd {
     width: 100%;
 }
 
+section.foreword .card-body {
+    height: 100%;
+    background-image: url('../images/motif-card-foreword.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-color: #19486a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+}
+
+section.foreword h5.text-name {
+}
+/* section.foreword .card {
+    border: none;
+} */
+/* 
+section.foreword .img-foreword {
+    width: 100%;
+} */
+/* 
 section.foreword .card-body {
     background-color: #19486a;
     height: 100%;
     background-image: url('../images/motif-card-foreword.svg');
     background-repeat: no-repeat;
     background-size: contain;
-}
+} */
 /* End Foreword */
 
 /* inclusive Human */

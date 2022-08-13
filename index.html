@@ -102,7 +102,7 @@
                 </div>
                 <div class="row mb-4">
                     <div class="col-sm-12 col-md-12 col-lg-5">
-                        <img src="assets/images/img-content-7.webp" width="100%" alt="">
+                        <img src="assets/images/img-content-7.webp" width="100%" height="auto" alt="">
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-7">
                         <p class="text-content">
@@ -121,37 +121,33 @@
                     <h3 class="text-title">Foreword</h3>
                 </div>
                 <div class="row mb-4">
-                    <div class="col-lg-6">
-                        <div class="card mb-3" data-aos="fade-right">
-                            <div class="row g-0">
-                              <div class="col-md-6">
-                                <img src="assets/images/vallerie.webp" class="img-foreword" alt="...">
-                              </div>
-                              <div class="col-md-6">
-                                <div class="d-flex align-items-start flex-column card-body">
-                                  <h5 class="text-name p-2">Valerie Julliand</h5>
-                                  <p class="text-occupation p-2">United Nations Resident Coordinator in Indonesia</p>
-                                  <a href="" class="read-more mb-auto p-2"><img src="assets/images/motif-read.svg" alt="motif-read" class="me-2" width="20">Read more</a>
+                    <div class="col-sm-6">
+                        <a data-bs-toggle="modal" data-bs-target="#story-1" style="cursor: pointer;">
+                            <div class="card" data-aos="fade-right">
+                                <div class="card-body p-0">
+                                    <img src="assets/images/vallerie.webp" class="img-card-ihd me-3" alt="vallerie" style="float: left; width: 49%;">
+                                    <p class="text-card-story">
+                                        <span class="text-name">Valerie Julliand</span>
+                                    <p class="text-occupation">United Nations Resident Coordinator in Indonesia</p>
+                                    <span class="read-more"><img src="assets/images/motif-read.svg" alt="motif-read" class="me-2" width="20">Read more</span>
+                                    </p>
                                 </div>
-                              </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="card mb-3" data-aos="fade-left">
-                            <div class="row g-0">
-                              <div class="col-md-6">
-                                <img src="assets/images/suharso.webp" class="img-foreword" alt="...">
-                              </div>
-                              <div class="col-md-6">
-                                <div class="d-flex align-items-start flex-column card-body">
-                                  <h5 class="text-name p-2">Suharso Monoarfa</h5>
-                                  <p class="text-occupation p-2">Minister of National Development Planning/Head of National Development Planning Agency (Bappenas)</p>
-                                  <a href="" class="read-more mb-auto p-2"><img src="assets/images/motif-read.svg" alt="motif-read" class="me-2" width="20">Read more</a>
+                    <div class="col-sm-6">
+                        <a  data-bs-toggle="modal" data-bs-target="#story-2" style="cursor: pointer;">
+                            <div class="card" data-aos="fade-left">
+                                <div class="card-body p-0">
+                                    <img src="assets/images/suharso.webp" class="img-card-ihd me-3" alt="suharso" style="float: left; width: 50%;">
+                                    <p class="text-card-story">
+                                        <span class="text-name">Suharso Monoarfa</span>
+                                    <p class="text-occupation">Minister of National Development Planning/Head of National Development Planning Agency (Bappenas)</p>
+                                    <span class="read-more"><img src="assets/images/motif-read.svg" alt="motif-read" class="me-2" width="20">Read more</span>
+                                    </p>
                                 </div>
-                              </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -190,8 +186,9 @@
             <div class="container">
                 <footer class="py-5">
                     <div class="row">              
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-8 mb-3">
                             <div class="row">
+                                <p class="mb-2 p-0 text-footer">Contact Us :</p>
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-3">
                                         <a href="#" class="p-0 text-nav-footer">
@@ -209,14 +206,16 @@
                                 </ul>
                             </div>
                             <div class="row mt-5">
+                                <p class="mb-2 p-0 text-footer">For more Informations :</p>
                                 <ul class="nav list-unstyled">
+                                    <li class="me-3"><a class="text-nav-footer" target="_blank" href="https://indonesia.un.org/"><i class="bi bi-globe me-2"></i>indonesia.un.org</a></li>
                                     <li class="me-3"><a class="text-nav-footer" target="_blank" href="https://www.instagram.com/uninindonesia/?hl=id"><i class="bi bi-instagram me-2"></i>UNinIndonesia</a></li>
                                     <li class="me-3"><a class="text-nav-footer" target="_blank" href="https://twitter.com/uninindonesia?s=21"><i class="bi bi-twitter me-2"></i>UNinIndonesia</a></li>
                                     <li class="me-3"><a class="text-nav-footer" target="_blank" href="https://web.facebook.com/UNinIndonesia"><i class="bi bi-facebook me-2"></i>United Nations in Indonesia</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3 d-flex justify-content-end">
+                        <div class="col-md-4 mb-3 d-flex justify-content-end">
                             <img src="assets/images/logo-uncro-footer.svg" alt="logo-uncro" class="logo-footer">
                         </div>
                     </div>
@@ -224,6 +223,63 @@
             </div>
         </section>
     </main>
+
+    <!-- Modal Story -->
+    <div class="modal fade" id="story-1" aria-hidden="true" aria-labelledby="story-1" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+          <div class="modal-content p-3">
+              <button type="button" class="btn-close ms-auto mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-5 p-0">
+                        <img src="assets/images/story-valerie.jpg" class="img-responsive me-3" alt="valerie" width="100%" height="100%">
+                    </div>
+                    <div class="col-lg-7 bg-color-bluedark bg-box-story">
+                        <p class="text-content text-white" style="font-size: 13px; padding: 40px 20px 40px 20px">
+                            <span class="text-name-box">Valerie Julliand</span><br>
+                            <span class="text-occupation-box">United Nations Resident Coordinator in Indonesia</span> <br><br>
+                            Before I took up my post as Resident Coordinator in October 2020, I had looked forward to visiting a vast array of UN programmes across Indonesia and understanding the archipelago’s people and culture through the discovery of its diversity. What I did not envisage was spending so much of 2021 working from a Jakarta apartment. <br><br>                 
+                            The year 2021 was when the socioeconomic fallout of COVID-19 became truly apparent in parallel with a resurgent health crisis. It was a year that uniquely tested our personal and professional resolve. Who among us can forget the horrifyingly frequent wail of ambulance sirens on July nights as the COVID-19 caseload skyrocketed in Indonesia? <br><br>                           
+                            Yet, as this report shows, COVID-19 did not halt the urgent work of the UN. Our country team built on its 76-year-old partnership with the government to further strengthen public health and social-economic response and recovery efforts, while at the same time ensuring continued progress towards the Sustainable Development Goals. This report—for the first time co-produced with the Ministry of National Development Planning (BAPPENAS) -details our joint achievements under the Sustainable Development Cooperation Framework 2021–2025. Those achievements owe to the flexibility of a government that expanded social protection, passed tax reforms to mobilize recovery funds, and followed 2020’s negative –2.07% GDP contraction, with a year of 3.7% GDP growth. They also speak to the unbreakable resolve of UN actors and donor partners who continued to chart a course towards the SDGs even as we navigated our way through a once-in-a-generation health crisis. <br><br>                            
+                            Even more, our results are a testament to the resilience of Indonesian people. In 2021, Indonesians held firm through not only the pandemic, but a litany of disasters bookended by the West Sulawesi earthquake in January and the eruption of Mount Semeru in December. The fortitude of Indonesians—who make up most of our 1966 UN staff members—was a constant source of inspiration throughout the year. <br><br>                            
+                            I note with pride that as President of the G20, Indonesia has resolved to serve as a voice for less-developed nations, manifesting the UN’s commitment to leave no one behind on the world stage. In parallel, the UN in Indonesia has commissioned a study on who is being left behind at a local level, to ensure that we remain true to this foundational promise across every aspect of our work. Its results will be available in 2022.                             
+                            My deepest thanks go to the Government for their excellent collaboration through 2021. I would also like to thank all donor nations and UN partners who made our work possible. Finally, I would like to thank the people of Indonesia for their courage and steadfastness. <br><br>
+                            Woven through this report is a motif inspired by Tenun Ulap Doyo, a centuries-old plant fibre weaving technique that originated with the Dayak Benuak people of East Kalimantan. The Ulap Doyo-style lima, or boat, that decorates these pages symbolises our cooperation with the government, partners, and Indonesian people, and how that cooperation kept us afloat in the stormiest of seas. <br>                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="story-2" aria-hidden="true" aria-labelledby="story-1" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+          <div class="modal-content p-3">
+              <button type="button" class="btn-close ms-auto mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-5 p-0">
+                        <img src="assets/images/story-suharso.jpg" class="img-responsive me-3" alt="valerie" width="100%" height="100%">
+                    </div>
+                    <div class="col-lg-7 bg-color-bluedark bg-box-story">
+                        <p class="text-content text-white" style="font-size: 13px; padding: 40px 20px 40px 20px">
+                            <span class="text-name-box">Suharso Monoarfa</span><br>
+                            <span class="text-occupation-box">Minister of National Development Planning/Head of National Development Planning Agency (Bappenas)
+                            </span> <br><br>
+                            I would first like to compliment the UN Agencies in Indonesia for the United Nations Sustainable Development Cooperation Framework (UNSDCF) Results Report 2021. This report highlights the cordial relationship between the Government of Indonesia and the United Nations System and this report affirms that relationship as we work together to advance Indonesia’s development agenda and priorities, particularly the Sustainable Development Goals (SDGs) 2030 and Indonesia’s National Medium- Term Development Plan (RPJMN) 2020-2024. The Report includes the progress and accomplishments to deliver four outcomes of UNSDCF 2021-2025: (i) Inclusive Human Development; (ii) Economic Transformation; (iii) Green Development, Climate Change and Natural Disasters; and (iv) Innovation to Accelerate Progress towards the SDGs. <br><br> 
+                            I wish to extend my deepest appreciation to all UN agencies and government partners for all their joint works, especially in facing the challenges during the ongoing COVID-19 pandemic. In 2021, we aimed for better and stronger recovery that drove us to reshape our development priorities and strategies to support health and social recovery efforts. Our partnership with the UN agencies is crucial to achieve resilient recovery including the implementation of UN Joint program through the “UN COVID-19 Multi-Partner Trust Fund” to scale up inclusive social protection programs and the UN Joint program on “Adaptive Social Protection for all in Indonesia” to ensure that the most vulnerable groups, including women and children, are protected against adverse socio-economic impact of the crisis. <br><br>
+                            As we approach the deadline to achieve the SDGs, the next eight years would require stronger collaboration and strategic partnerships between the Government of Indonesia and the UN to further benefit the people of Indonesia. Significant resource mobilization and innovative financing are crucial to setting our work towards achieving the SDGs back on track, amid the setbacks caused by the pandemic and the financing gap. Under the coordination of the UN Resident Coordinator Office Indonesia, the UN system can play a greater role to address this matter and resolve the SDGs financing gap. We should redouble our efforts to continue strengthening data analysis, technology, digitalization, and innovation to provide recommendations for government strategies and policies, and reaffirm our shared commitment to leave no one behind that can greatly contribute to achieving the SDGs by 2030. <br><br>
+                            In this context, I am honored to highlight that Indonesia assumes a most important role as G20 Presidency in 2022 under the collective actions to “recover together, recover stronger”, with Bappenas as the Chair of the Development Working Group. We will embrace this momentum for stronger commitment and concrete action to recovery and resilience, and to implement the global development agenda. <br><br>
+                            I would like to, once again, thank all UN agencies for their enduring support to Indonesia over the past decades and I look forward to our continued partnership. <br><br>
+                            Together, the Government of the Republic of Indonesia and the United Nations will play an impactful role to advance the SDGs while ensuring that no one is left behind. <br><br>                           
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- end modals -->
     
     <script src="assets/library/jQuery/jquery-3.6.0.min.js"></script>
     <script src="assets/library/OwlCarousel2-2.3.4/js/owl.carousel.js"></script>
