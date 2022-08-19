@@ -208,7 +208,7 @@ body {
 
 .menus {
     position: absolute;
-    height: 60px;
+    height: 100px;
     width: 100%;
     left: -12px;
     right: -12px;
@@ -219,28 +219,31 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     text-decoration: none;
+    background-size: 70%;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     transition: all 0.3s ease-in-out;
     justify-items: center;
     margin: auto;
+    align-content: center;
 }
 
 .menus:hover {
     padding-top: 25px;
-    height: 80px;
-    background-image: 50%;
-    font-weight: 600;
+    height: 120px;
+    background-size: 70%;
+    /* font-weight: 600; */
     color: #fff;
+    transition: all 0.4s ease-out;
 }
 
 .menus.active {
     padding-top: 25px;
-    height: 80px;
-    background-image: 50%;
-    font-weight: 600;
+    height: 120px;
+    background-size: 70%;
+    /* font-weight: 600; */
     color: #fff;
     
 }
