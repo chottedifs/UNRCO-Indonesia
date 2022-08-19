@@ -285,42 +285,42 @@ header .navbar {
 
 /* Jumbotron */
 section .jumbotron {
-    height: 550px;
+    height: 700px;
     background-image: url('../images/img-hero-1.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .jumbotron1 {
-    height: 550px;
+    height: 700px;
     background-image: url('../images/img-hero-2.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .jumbotron2 {
-    height: 550px;
+    height: 700px;
     background-image: url('../images/economic-transformation/foto/img-hero-3.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .jumbotron4 {
-    height: 550px;
+    height: 700px;
     background-image: url('../images/green-development/foto/img-hero-4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .jumbotron5 {
-    height: 550px;
+    height: 700px;
     background-image: url('../images/innovation-to-accelerate/foto/img-hero-5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .jumbotron6 {
-    height: 550px;
+    height: 700px;
     background-image: url('../images/un-reform/img-hero-6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
