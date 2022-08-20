@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top">
+        <nav class="navbar fixed-top shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo-uncro.svg" alt="logo-uncro-indonesia" class="img-logo">
@@ -341,15 +341,15 @@
     <!-- Modal Story -->
     <div class="modal fade" id="story-1" aria-hidden="true" aria-labelledby="story-1" tabindex="-1">
         <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-          <div class="modal-content p-3">
-              <button type="button" class="btn-close ms-auto mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body">
+          <div class="modal-content">
+            <div class="modal-body pt-0 pb-0">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 p-0">
                         <img src="assets/images/green-development/human-interest-story/Foto OP31/img-story-1.jpg" class="img-responsive me-3" height="100%" width="100%"  alt="...">
                     </div>
                     <div class="col-lg-7">
-                        <p class="text-content" style="font-size: 18px;">
+                        <button type="button" class="btn-close me-3 mb-3 my-3 bg-white" data-bs-dismiss="modal" aria-label="Close" style="float: right;"></button>
+                        <p class="text-content" style="font-size: 18px; padding: 40px 20px 40px 20px;">
                           <span class="text-modal-story"><img src="assets/images/motif-read-blue.svg" alt="motif-read" class="me-2" width="40">Ristafah’s Story</span><br>
                           <span class="text-submodal-story">Bringing Clean Reliable Power to Island Village</span><br><br>
                           As a child growing up in rural Indonesia, environmentalist Ristifah only had electricity for three hours each day. With limits on when she could charge her phones and access the internet, she often studied by candlelight and felt cut off from developments happening across the rest of the country. <br><br>
@@ -366,15 +366,15 @@
     </div>
     <div class="modal fade" id="story-2" aria-hidden="true" aria-labelledby="story-1" tabindex="-1">
         <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-          <div class="modal-content p-3">
-            <button type="button" class="btn-close ms-auto mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body">
+          <div class="modal-content">
+            <div class="modal-body pt-0 pb-0">
                 <div class="row">
                     <div class="col-lg-5">
                         <img src="assets/images/green-development/human-interest-story/Foto OP31/img-story-2.jpg" class="img-responsive me-3" height="100%" width="100%"  alt="...">
                     </div>
                     <div class="col-lg-7">
-                        <p class="text-content" style="font-size: 18px;">
+                        <button type="button" class="btn-close me-3 mb-3 my-3 bg-white" data-bs-dismiss="modal" aria-label="Close" style="float: right;"></button>
+                        <p class="text-content" style="font-size: 18px; padding: 40px 20px 40px 20px;">
                             <span class="text-modal-story"><img src="assets/images/motif-read-blue.svg" alt="motif-read" class="me-2" width="40">Indah’s Story</span> <br>
                             <span class="text-submodal-story">How Coordination Built Resilience in a Flood-Hit Community</span><br><br>
                             Indah Putri Indriani, the Regent of North Luwu in South Sulawesi province was cooking in a public kitchen when her phone started buzzing with alerts informing her that flash floods in the area had forced 14,000 people from their homes. As regent, it fell on Indah to coordinate response, recovery, and reconstruction efforts in an environment already complicated by the COVID-19 pandemic. <br><br>
@@ -391,15 +391,15 @@
     </div>
     <div class="modal fade" id="story-3" aria-hidden="true" aria-labelledby="story-1" tabindex="-1">
         <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-          <div class="modal-content p-3">
-            <button type="button" class="btn-close ms-auto mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body">
+          <div class="modal-content">
+            <div class="modal-body pt-0 pb-0">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 p-0">
                         <img src="assets/images/green-development/human-interest-story/Foto OP31/img-story-3.jpg"class="img-responsive me-3" height="100%" width="100%" alt="...">
                     </div>
                     <div class="col-lg-7">
-                        <p class="text-content" style="font-size: 18px;">
+                        <button type="button" class="btn-close me-3 mb-3 my-3 bg-white" data-bs-dismiss="modal" aria-label="Close" style="float: right;"></button>
+                        <p class="text-content" style="font-size: 18px; padding: 40px 20px 40px 20px;">
                             <span class="text-modal-story"><img src="assets/images/motif-read-blue.svg" alt="motif-read" class="me-2" width="40">Renanda’s Story, UNICEF</span> <br>
                             <span class="text-submodal-story">Fighting Disinformation, One Story at a Time</span><br><br>
                             Since the beginning of the COVID-19 outbreak, an ‘infodemic’ of false and misleading information has spread alongside the disease. Claims that wearing masks inhibits breathing and that the COVID-19 vaccines contain microchips have been amplified on digital platforms, undermining prevention, and vaccination efforts to devastating effect in Indonesia, where a government-backed 2020 survey found that between 64% and 79% of respondents could not recognize misinformation online. <br><br>
@@ -440,9 +440,9 @@
     </script>
     <script>
         $('.carousel-card').owlCarousel({
-                loop: true,
-                center: true,
-                items: 5,
+                loop: false,
+                center: false,
+                items: 7,
                 margin: 15,
                 // autoplay: true,
                 // dots:true,

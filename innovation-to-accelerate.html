@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top">
+        <nav class="navbar fixed-top shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo-uncro.svg" alt="logo-uncro-indonesia" class="img-logo">
@@ -280,16 +280,16 @@
 
     <!-- Modal Story -->
     <div class="modal fade" id="story-1" aria-hidden="true" aria-labelledby="story-1" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-          <div class="modal-content p-3">
-              <button type="button" class="btn-close ms-auto mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-body pt-0 pb-0">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 p-0">
                         <img src="assets/images/innovation-to-accelerate/human-interest-story/Foto/op1.jpg" class="img-responsive me-3" height="100%" width="100%" alt="...">
                     </div>
                     <div class="col-lg-7">
-                        <p class="text-content" style="font-size: 18px;">
+                        <button type="button" class="btn-close me-3 mb-3 my-3 bg-white" data-bs-dismiss="modal" aria-label="Close" style="float: right;"></button>
+                        <p class="text-content" style="font-size: 18px; padding: 40px 20px 40px 20px;">
                           <span class="text-modal-story"><img src="assets/images/motif-read-blue.svg" alt="motif-read" class="me-2" width="40">Agi’s Story</span><br>
                           <span class="text-submodal-story">How Good Data Lead to Good Decisions on COVID-19</span><br><br>
                           Agi Agung Galuh Purwa, who heads a technical division for digital data management at the Government of West Java, says there is a particular expression the provinces’ governor Mr. Ridwan Kamil is fond of reciting: “Good data is a good decision, bad data is a bad decision.” <br><br>
@@ -305,16 +305,16 @@
         </div>
     </div>
     <div class="modal fade" id="story-2" aria-hidden="true" aria-labelledby="story-1" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-          <div class="modal-content p-3">
-            <button type="button" class="btn-close ms-auto mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-body pt-0 pb-0">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 p-0">
                         <img src="assets/images/innovation-to-accelerate/human-interest-story/Foto/op2.jpg" class="img-responsive me-3" height="100%" width="100%" alt="...">
                     </div>
                     <div class="col-lg-7">
-                        <p class="text-content" style="font-size: 18px;">
+                        <button type="button" class="btn-close me-3 mb-3 my-3 bg-white" data-bs-dismiss="modal" aria-label="Close" style="float: right;"></button>
+                        <p class="text-content" style="font-size: 18px; padding: 40px 20px 40px 20px;">
                             <span class="text-modal-story"><img src="assets/images/motif-read-blue.svg" alt="motif-read" class="me-2" width="40">Adaifa’s Story</span> <br>
                             <span class="text-submodal-story">How Preventing Overfishing Supports the Generations to Come</span><br><br>
                             In the coastal village of Pegagasan on Indonesia’s Madura Island, 41-year-old Adaifah oversees inspecting and sorting Blue Swimming Crabs at a cooking station frequented by up 40 fisherfolk every day. <br><br>
@@ -348,8 +348,8 @@
     </script> -->
     <script>
         $('.carousel-card').owlCarousel({
-                loop: true,
-                center: true,
+                loop: false,
+                center: false,
                 items: 5,
                 margin: 15,
                 // autoplay: true,
@@ -368,7 +368,7 @@
                         items: 2
                     },
                     1170: {
-                        items: 4
+                        items: 3
                     }
                 }
             });

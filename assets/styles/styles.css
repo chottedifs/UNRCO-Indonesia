@@ -174,6 +174,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: #19486a;
+    float: left;
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Roboto', sans-serif;
 }
@@ -327,7 +328,7 @@ section .jumbotron6 {
 }
 
 section .text-jumbotron {
-    padding-top: 250px;
+    padding-top: 300px;
     color: #fff;
     font-size: 40px;
     font-weight: 400;
@@ -339,6 +340,17 @@ section .text-jumbotron span {
     font-weight: 700;
 }
 /* End Jumbotron */
+
+/* Read Info */
+.read-info-img {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-info-img:hover{
+    transform: scale(1.06);
+}
+/* End Read Info */
 
 /* About */
 section.about {
@@ -364,6 +376,10 @@ section.carousel-ihd .card {
 section.foreword .card {
     border: 1;
     max-height: 100%;
+}
+
+section.foreword .card:hover {
+    transform: scale(1.07);
 }
 
 section.foreword .img-card-ihd {
@@ -408,6 +424,10 @@ section.story-ihd .card {
     max-height: 100%;
 }
 
+section.story-ihd .card:hover {
+    transform: scale(1.05);
+}
+
 section.story-ihd .img-card-ihd {
     width: 100%;
 }
@@ -423,6 +443,7 @@ section.story-ihd .card-body {
 
 /* UN Reform */
 .menus-reform{
+    background-color: #fff;
     color: #19486a;
     font-size: 18px;
     text-decoration: none;
