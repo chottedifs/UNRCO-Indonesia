@@ -398,24 +398,6 @@ section.foreword .card-body {
     font-weight: 700;
     color: #fff;
 }
-
-section.foreword h5.text-name {
-}
-/* section.foreword .card {
-    border: none;
-} */
-/* 
-section.foreword .img-foreword {
-    width: 100%;
-} */
-/* 
-section.foreword .card-body {
-    background-color: #19486a;
-    height: 100%;
-    background-image: url('../images/motif-card-foreword.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
 /* End Foreword */
 
 /* inclusive Human */
@@ -442,6 +424,53 @@ section.story-ihd .card-body {
 /* End inclusive Human */
 
 /* UN Reform */
+.btn-back {
+    float: left;
+    border: 2px solid #19486a;
+    padding: 10px 20px 10px 20px;
+    font-family: 14px;
+    color: #19486a;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-color: #19486a;
+}
+
+.btn-back:hover {
+    transform: scale(1.03);
+    color: #19486a;
+    font-weight: 600;
+    border-color: #19486a;
+}
+
+.btn-next {
+    float: right;
+    border: 2px solid #19486a;
+    padding: 10px 20px 10px 20px;
+    font-family: 14px;
+    color: #19486a;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-color: #19486a;
+}
+
+.btn-next:hover {
+    transform: scale(1.03);
+    color: #19486a;
+    font-weight: 600;
+    border-color: #19486a;
+}
+
+.accordion-body {
+    background-image: url('../images/motif-card.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
 .menus-reform{
     background-color: #fff;
     color: #19486a;
@@ -779,10 +808,55 @@ section.story-ihd .card-body {
 @media screen and (max-width:768px){.carousel-infografis .owl-stage-outer{transform:scale(1);padding:10px 0}.owl-nav{display:none}}
 /* End Owl Carousel */
 
+/* Scroll Up */
+#scroll-up {
+    display: inline-block;
+    background-color: #FFF;
+    width: 30px;
+    height: 45px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #19486a;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  /* #scroll-up::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  } */
+  #scroll-up:hover {
+    cursor: pointer;
+    background-color:#19486a;
+    color: #fff;
+}
+#scroll-up:active {
+    background-color:#19486a;
+    color: #fff;
+}
+#scroll-up.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+/* End Scroll Up */
+
 /* Floating menu */
 .action  {
     position: fixed;
-    bottom: 40px;
+    bottom: 30px;
     left: -70px;
     width: 40px;
     height: 40px;
@@ -796,7 +870,7 @@ section.story-ihd .card-body {
 }
 
 .action.show {
-    left: 40px;
+    left: 20px;
     transform: rotate(180);
 }
 
