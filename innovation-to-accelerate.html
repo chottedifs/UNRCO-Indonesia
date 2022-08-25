@@ -29,6 +29,36 @@
         <!-- Scroll Up -->
         <a class="shadow-sm" id="scroll-up"><i class="bi bi-chevron-up"></i>Top</a>
         <!-- End Scroll Up -->
+ 
+         <!-- Floating menu -->
+         <div class="action shadow-sm" onclick="actionToggle();">
+            <span class="toggle-menu"><i class="bi bi-list"></i></span>
+            <span class="text-menu">Menu</span>
+            <ul class="navbar-nav shadow-sm">
+                <li class="nav-item">
+                    <a class="nav-link" href="review-year.html"><img src="assets/images/motif-menu-float-1.svg" class="me-2" width="30" alt="">A Year in Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inclusive-human.html"><img src="assets/images/motif-menu-float-5.svg" class="me-2" width="30" alt="">Inclusive Human Development</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="economic-transformation.html"><img src="assets/images/motif-menu-float-4.svg" class="me-2" width="30" alt="">Economic Tranformation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="green-development.html"><img src="assets/images/motif-menu-float-6.svg" class="me-2" width="30" alt="">Green Development, Climate Change, and Natural Disasters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="innovation-to-accelerate.html"><img src="assets/images/motif-menu-float-3.svg" class="me-2" width="30" alt="">Innovation to Accelerate Progress Towards the SDGs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="un-reform.html"><img src="assets/images/motif-menu-float-2.svg" class="me-2" width="30" alt="">UN Reform in Indonesia</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a class="nav-link" href="#"><i class="bi bi-download me-2"></i>Download Report in PDF</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Floating menu -->
         
         <section class="hero">
             <div class="jumbotron5 p-4 mb-4">
@@ -254,33 +284,6 @@
             </div>
         </section>
     </main>
-    
-    <!-- Floating menu -->
-    <div class="action shadow-sm" onclick="actionToggle();">
-        <span class="toggle-menu"><i class="bi bi-list"></i></span>
-        <span class="text-menu">Menu</span>
-        <ul class="navbar-nav shadow-sm">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">A Year in Review</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Inclusive Human Development</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Economic Tranformation</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Green Development, Climate Change, and Natural Disasters</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Innovation to Accelerate Progress Towards the SDGs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">UN Reform in Indonesia</a>
-            </li>
-        </ul>
-    </div>
-    <!-- End Floating menu -->
 
     <!-- Modal Story -->
     <div class="modal fade" id="story-1" aria-hidden="true" aria-labelledby="story-1" tabindex="-1">
@@ -340,17 +343,18 @@
     <script src="assets/library/jQuery/jquery-3.6.0.min.js"></script>
     <script src="assets/library/OwlCarousel2-2.3.4/js/owl.carousel.js"></script>
     <script src="assets/script/script.js"></script>
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         function actionToggle() {
             var action = document.querySelector('.action');
-            action.classList.toggle('active')
+            action.classList.toggle('active');
         }
-
+        
         var action = document.querySelector('.action');
         window.onscroll = function(){
             action.classList.toggle('show', window.scrollY >= 600);
+            action.classList.remove('active', window.screenY >= 600);
         }
-    </script> -->
+    </script>
     <script>
         $('.carousel-card').owlCarousel({
                 loop: true,
@@ -418,7 +422,7 @@
     <script type="text/javascript">
         function actionToggle() {
             var action = document.querySelector('.action');
-            action.classList.toggle('active')
+            action.classList.toggle('active');
         }
 
         var action = document.querySelector('.action');

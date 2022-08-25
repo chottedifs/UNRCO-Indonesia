@@ -206,8 +206,6 @@ body {
 /* End Conponent Font */
 
 /* Component Menus */
-
-
 .menus {
     position: absolute;
     height: 100px;
@@ -236,7 +234,6 @@ body {
     padding-top: 25px;
     height: 120px;
     background-size: 70%;
-    /* font-weight: 600; */
     color: #fff;
     transition: all 0.4s ease-out;
 }
@@ -245,7 +242,6 @@ body {
     padding-top: 25px;
     height: 120px;
     background-size: 70%;
-    /* font-weight: 600; */
     color: #fff;
     
 }
@@ -376,7 +372,8 @@ section.carousel-ihd .card {
 /* Foreword */
 section.foreword .card {
     border: 1;
-    max-height: 100%;
+    z-index: -3;
+    /* max-height: 100%; */
 }
 
 section.foreword .card:hover {
@@ -405,6 +402,7 @@ section.foreword .card-body {
 section.story-ihd .card {
     border: 1;
     max-height: 100%;
+    z-index: -1;
 }
 
 section.story-ihd .card:hover {
@@ -589,29 +587,25 @@ section.story-ihd .card-body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* Charts */
+.card-chart {
+    z-index:-1;
+}
+/* End Charts */
 
 /* Owl Carousel Infografis */
+.owl-carousel {
+    z-index: -2 !important;
+}
+
 .carousel-infografis {
     /* background:#fff; */
     display:none;
     width:100%;
-    z-index:1;
 }
-    
+
 .carousel-infografis .owl-stage {
-    position:relative;
+    /* position:relative; */
     -ms-touch-action:pan-Y;
     touch-action:manipulation;
     /* -moz-backface-visibility:hidden; */
@@ -863,10 +857,9 @@ section.story-ihd .card-body {
     width: 40px;
     height: 40px;
     background: #fff;
-    cursor: pointer;
-    border-radius: 10px;
+    /* cursor: pointer; */
     padding: 5px;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
     transform: rotate(0);
     /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 1); */
 }
@@ -888,6 +881,7 @@ section.story-ihd .card-body {
     align-items: center;
     font-size: 2em;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .action .text-menu {
@@ -905,19 +899,22 @@ section.story-ihd .card-body {
     position: absolute;
     bottom: 55px;
     background: #fff;
-    min-width: 250px;
+    min-width: 600px;
     padding: 20px;
-    border-radius: 10px;
+    border: 2px solid #19486a;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+    z-index: 3;
+    background-image: url('../images/motif-menu-float-bg.svg');
+    background-repeat: no-repeat;
 }
 
 .action.active ul {
     bottom: 65px;
     opacity: 1;
     visibility: visible;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .action.active ul li a{
@@ -929,17 +926,19 @@ section.story-ihd .card-body {
     list-style: none;
     display: flex;
     justify-content: flex-start;
+    font-family: 'Montserrat', sans-serif;
     align-items: center;
     /* padding: 10px 0px; */
-    transition: 0.3s;
+    /* transition: 0.3s; */
+    transition: all 0.2s ease;
 }
 
 .action ul li:hover {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .action ul li:not(:last-child){
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 1); */
 }
 /* END Floating menu */
 
